@@ -1,0 +1,7 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    background-color: #556B2F;
+    width: 100%;
+    min-height: 100vh;
+}

@@ -1,0 +1,24 @@
+.logoLogin {
+    width: 80%;
+}
+
+form {
+    background-color: #ffffff70;
+    padding: 30px;
+    border-radius: 15px;
+    color: #654321;
+    font-weight: 700;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    form {
+        width: 50%;
+    }
+  }
+.btn-style {
+    background-color: #FFDF00;
+    color: #654321;
+    font-weight: bold;
+}

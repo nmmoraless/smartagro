@@ -1,0 +1,18 @@
+.logoLogin {
+    width: 80%;
+}
+
+form {
+    background-color: #ffffff70;
+    padding: 30px;
+    border-radius: 15px;
+    color: #654321;
+    font-weight: 700;
+    width: 400px;
+}
+
+.btn-style {
+    background-color: #FFDF00;
+    color: #654321;
+    font-weight: bold;
+}

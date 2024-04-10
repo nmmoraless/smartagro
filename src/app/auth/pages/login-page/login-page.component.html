@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center align-items-center h-100">
+  <div class="align-items-center">
+    <form>
+      <h1><img class="logoLogin" src="../../../../assets/Logo_Smart_Agro.png" alt="Logo_Smart_Agro"></h1>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" [(ngModel)]="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+        <div *ngIf="validarCorreo" class="alert alert-danger my-2" role="alert">
+          El correo es obligatorio
+        </div>
+        <div id="emailHelp" class="form-text">Ingrese el correo regisrado</div>
+      </div>
+      <div>
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input [type]="tipoInput" [(ngModel)]="contrasenia" class="form-control" name="contrasenia" id="exampleInputPassword1">
+      </div>
+      <div *ngIf="validarContrasenia" class="alert alert-danger my-2" role="alert">
+        Contraseña invalida
+      </div>
+      <div class="mb-3 form-check">
+        <input (click)="mostrarContrasenia($event)" type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Mostrar Contraseña</label>
+      </div>
+      <div class="row">
+        <button type="submit" (click)="validarDatos()" class="btn btn-style">Ingresar</button>
+        <a href="/auth/register" class="text-secondary-emphasis text-end enlace">¿No estás regisrado?, hazlo aquí!</a>
+      </div>
+    </form>
+  </div>
+</div>
+
